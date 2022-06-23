@@ -254,8 +254,15 @@
           <h2>Cuéntanos sobre tu proyecto</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quasi quas, hic, sunt earum a.</p>
 
-          <form>
+          <form action="https://formsubmit.co/david381dc@gmail.com" method="POST">
             <div>
+              
+              <!-- desabilitar captcha -->
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_subject" value="Nuevo Mensaje!">
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+          
+
               <input type="text" name="nombre" placeholder="Nombre" id="nombre">
               <p class="error">Por favor escribe tu nombre</p>
             </div>
@@ -268,7 +275,7 @@
               <p class="error">Por favor escribe tu mensaje</p>
             </div>
             <div>
-              <input type="submit" name="enviar" value="Enviar">
+              <button type="submit" name="enviar">Enviar</button>
             </div>
           </form>
         </div>

@@ -524,7 +524,7 @@ body {
   letter-spacing: 0;
 }
 
-.main .contacto .contenedor-formulario .formulario form input[type="submit"] {
+.main .contacto .contenedor-formulario .formulario form button[type="submit"] {
   width: 100%;
   border: none;
   border: 1px solid #0089E0;
@@ -538,7 +538,7 @@ body {
   transition: all .7s ease;
 }
 
-.main .contacto .contenedor-formulario .formulario form input[type="submit"]:hover {
+.main .contacto .contenedor-formulario .formulario form button[type="submit"]:hover {
   background: #fff;
   color: #0089E0;
 }
@@ -743,5 +743,7 @@ footer .footer-redes a:hover {
     .main .contacto .contenedor-formulario .formulario {
       padding: 35px;
     }
+
+  }
 
 }
