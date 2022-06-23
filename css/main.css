@@ -30,7 +30,7 @@ body {
 }
 
 .titulo-seccion p {
-  color: #9797;
+  color: #564956a6;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -295,7 +295,7 @@ body {
   text-align: left;
 }
 .main .acerca-de .texto-acerca-de p{
-  color: #9797;
+  color: #564956a6;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -388,13 +388,13 @@ body {
 }
 
 .main .nuestro-equipo .equipo .persona-equipo .texto h4 {
-  color: #9797;
+  color: #564956a6;
   font-size: 0.8rem;
   font-weight: 400;
   margin-bottom: 15px;
 }
 .main .nuestro-equipo .equipo .persona-equipo .texto p {
-  color: #9797;
+  color: #564956a6;
   font-weight: 400;
   font-size: 0.9rem;
 }
@@ -443,7 +443,7 @@ body {
   margin-bottom: 15px;
 }
 .main .info-extra .contenedor .info .contenido-info .texto-info p {
-  color: #9797;
+  color: #61b7df;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -488,7 +488,7 @@ body {
 }
 
 .main .contacto .contenedor-formulario .formulario p {
-  color: #9797;
+  color: #564956a6;
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 30px;
@@ -501,7 +501,7 @@ body {
   outline: none;
   width: 100%;
   margin-bottom: 10px;
-  color: #9797;
+  color: #564956a6;
   font-size: 0.9rem;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -516,7 +516,7 @@ body {
   max-width: 100%;
   max-height: 88px;
   min-height: 88px;
-  color: #9797;
+  color: #564956a6;
   margin-bottom: 10px;
   font-size: 0.9rem;
   font-weight: 400;
@@ -561,12 +561,13 @@ body {
 /* Footer */
 footer {
   background: #f3f4fa;
-  padding: 54px 0;
+  padding-top: 54px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
 footer .copy {
-  color: #9797;
+  color: #564956a6;
   font-size: 0.9rem;
   font-weight: 400;
   margin-bottom: 15px;
@@ -575,7 +576,7 @@ footer .copy {
 footer .footer-redes a {
   display: inline-block;
   padding: 0 10px;
-  color: #9797;
+  color: #564956a6;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.875rem;
@@ -584,10 +585,29 @@ footer .footer-redes a {
   transition: all .3s ease;
 }
 
+footer .developer {
+  color: #564956a6;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 4rem;
+}
+
 footer .footer-redes a:hover {
   color: #0089E0;
 }
 
+.developer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.developer p {
+  font-weight: bolder;
+}
+.logo-desarrollador {
+  width: 68px;
+  margin: 0 1rem;
+}
 
 
 
@@ -746,4 +766,77 @@ footer .footer-redes a:hover {
 
   }
 
+}
+
+
+/* Editado la galeria */
+.proyecto {
+  transition: all .3s ease-in-out;
+}
+.proyecto:hover {
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
+}
+
+.imagen-proyecto {
+  box-shadow: 0px -4px 10px -3px rgb(0 0 0 / 51%);
+}
+
+.container-texto {
+  background-color: #fff;
+  box-shadow: 0px 9px 20px -1px rgb(0 0 0 / 51%);
+  padding: 1em;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+.container-texto h3 {
+  font-size: 1.4rem;
+  padding-bottom: .5em;
+}
+
+.proyecto p {
+  color: rgba(36, 36, 36, 0.514);
+  font-size: .9rem;
+  text-overflow: ellipsis;
+  /* overflow:hidden;
+  white-space:nowrap; */
+}
+/* Estilos para los textos de modal */
+.modal {
+  display: block;
+  padding: 5em 0;
+  text-align: center;
+}
+/* .container-modal {
+  width: 40%;
+  margin: auto;
+  background-color: #fff;
+}
+.modal img {
+  width: 100%;
+  max-width: 600px;
+}
+.modal h3 {
+
+  text-align: left;
+  width: 100%;
+  color: #fff;
+}
+.modal p {
+  color: rgb(46, 46, 46);
+  text-align: left;
+} */
+
+
+.persona-equipo:hover {
+  transform: translateY(-20%);
+  transition: all .3s ease-in-out;
+}
+.persona-equipo:nth-child(2):hover {
+  transform: translateY(10%);
+  transition: all .3s ease-in-out;
+}
+.persona-equipo {
+  transition: all .3s ease-in-out;
 }

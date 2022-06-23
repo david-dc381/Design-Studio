@@ -4,8 +4,21 @@ $(document).ready(function(){
 
     //obtenemos la ruta de la img a la cual hacemos click
     var rutaImagen = $(this).attr('src');
+
+    /* let imgTitulo = $("#imgTitulo").text();
+    let imgP = $("#imgP").text(); */
+
     //creamos el modal con cógido html y le pasamos la ruta de la img
-    var modal = '<div class="modal" id="modal"><img src="'+ rutaImagen +'" alt=""><div class="btn-cerrar" id="btnCerrar"><i class="fa fa-times" aria-hidden="true"></i></div></div>';
+    var modal = `
+      <div class="modal" id="modal">
+      <div class="container-modal">
+        <img src="${rutaImagen}" alt="">
+        <div class="btn-cerrar" id="btnCerrar">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+      </div>
+        
+      </div>`;
     //le indicamos que ponga el modal despues de la seccion proyectos
     $('#proyectos').after(modal);
 
