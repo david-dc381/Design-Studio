@@ -303,13 +303,13 @@
           <h2>Cuéntanos sobre tu proyecto</h2>
           <p>Si tienes algun proyecto en mente o alguna pregunta puedes contactarnos, tu pregunta no molesta.</p>
 
-          <form action="https://formsubmit.co/david381dc@gmail.com" method="POST">
+          <form id="enviarForm">
             <div>
               
               <!-- desabilitar captcha -->
               <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_subject" value="Nuevo Mensaje!">
-              <input type="hidden" name="_next" value="https://sdesign-studio.netlify.app/#contacto">
+              <!-- <input type="hidden" name="_next" value="https://sdesign-studio.netlify.app/#contacto"> -->
           
 
               <input type="text" name="nombre" placeholder="Nombre" id="nombre">
@@ -327,6 +327,12 @@
               <button type="submit" name="enviar">Enviar</button>
             </div>
           </form>
+
+          <span class="hide-loader">
+            <i class="fa fa-refresh fa-spin" aria-hidden="true"></i>
+            <p class="enviando">Enviando...</p>
+          </span>
+          <span id="mensajeEnviado" class="hide-mensaje">!! Se envio el mensaje !!</span>
         </div>
 
         <div class="foto">
@@ -370,5 +376,6 @@
 <script src="js/validarForm.js"></script>
 <script src="js/menuMobil.js"></script>
 <script src="js/prefixfree.min.js"></script>
+<script src="js/enviarEmail.js"></script>
 </body>
 </html>

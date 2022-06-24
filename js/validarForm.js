@@ -39,6 +39,8 @@ $(document).ready(function(){
     }
   }
 
+  
+
   function validar(e){
     valNombre(e);
     valEmail(e);
