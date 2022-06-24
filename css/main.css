@@ -658,7 +658,10 @@ footer .footer-redes a:hover {
     left: 0;
     z-index: 100;
   }
-
+  /* Estilos par cerrar el menu */
+  #close-menu {
+    font-size: 2.5rem;
+  }
   .menu-mobile .barra {
     display: flex;
     justify-content: space-between;
@@ -674,7 +677,8 @@ footer .footer-redes a:hover {
   }
 
   .menu-mobile .menu-principal {
-    width: 80%;
+    width: 100%;
+    height: 100%;
     display: block;
     position: fixed;
     top: 56px;
@@ -687,7 +691,7 @@ footer .footer-redes a:hover {
   }
   .menu-mobile .menu-principal a {
     display: block;
-    padding: 10px;
+    padding: 25px;
     color: #444;
     border-bottom: 1px solid rgba(204, 204, 204, 0.5);
   }
@@ -732,7 +736,12 @@ footer .footer-redes a:hover {
     }
     /* Proyectos */
     .main .proyectos .galeria-proyectos .proyecto {
-      width: 49%;
+      /* width: 49%; */
+
+      width: 90%;
+      margin-bottom: 2rem;
+      margin-left: auto;
+      margin-right: auto;
     }
     /* Nuestro equipo */
     .main .nuestro-equipo .equipo .persona-equipo {
@@ -808,27 +817,6 @@ footer .footer-redes a:hover {
   padding: 5em 0;
   text-align: center;
 }
-/* .container-modal {
-  width: 40%;
-  margin: auto;
-  background-color: #fff;
-}
-.modal img {
-  width: 100%;
-  max-width: 600px;
-}
-.modal h3 {
-
-  text-align: left;
-  width: 100%;
-  color: #fff;
-}
-.modal p {
-  color: rgb(46, 46, 46);
-  text-align: left;
-} */
-
-
 .persona-equipo:hover {
   transform: translateY(-20%);
   transition: all .3s ease-in-out;

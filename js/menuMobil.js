@@ -1,9 +1,20 @@
 $(document).ready(function(){
 
+
+  $("#close-menu").on("click", (e) => {
+    e.preventDefault();
+
+    $(".menu-mobile .menu-principal").animate({
+      left: "-100px"
+    }, 300)
+  })
+
+
   //variable para hacer validacion
   var numero = 1;
 
   $('#btnMenu').on('click', function(e){
+
     e.preventDefault();
     //si es igula a cero
     if ( numero == 1 ) {
@@ -30,7 +41,7 @@ $(document).ready(function(){
     $('.menu-mobile .menu-principal').animate({
       left: '-100%'
     }, 300, function(){
-      // numero = 1;
+      numero = 1;
     });
   });
 
